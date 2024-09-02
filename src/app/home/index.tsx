@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 import { ActivityIndicator, Alert, Image, Keyboard, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { styles } from './styles'
 import {MaterialIcons, MaterialCommunityIcons, Feather} from '@expo/vector-icons';
-
 export default function Home() {
     
-    const apiKey = 'a35ac1b53b7c35f14f2ab563629136ce';
+    const apiKey = process.env.API_KEY;
     const [loading, setLoading] = useState(false);
     const [city, setCity] = useState('');
     const [country, setCountry] = useState('');
