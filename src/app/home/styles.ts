@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
     content:{
         width:'100%',
         height: '100%',
-        backgroundColor: '#dbeafa',
+        backgroundColor: '#fafafa',
     },
     searchBox:{
         width:'100%',
@@ -49,6 +49,7 @@ export const styles = StyleSheet.create({
     label:{
         fontSize: 24,
         fontWeight:'bold',
+        color:'#fff'
     },
     input:{
         width:'80%',
@@ -67,11 +68,22 @@ export const styles = StyleSheet.create({
         borderColor:'#93c5fd'
     },
     resContainer:{
-        //backgroundColor: '#3b82f6',
-        width:'100%',
-        height: '100%',
-        marginTop:150,
+        justifyContent:'center',
+        backgroundColor: '#629bf7',
+        width:'90%',
+        height: 200,
+        marginTop:100,
+        marginHorizontal:20,
         alignItems: 'center',
+        borderRadius:10,
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 5,
+        },
+        shadowOpacity:  0.18,
+        shadowRadius: 4.59,
+        elevation: 12
     }
   });
   

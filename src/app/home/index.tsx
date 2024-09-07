@@ -86,81 +86,86 @@ export default function Home() {
         
             </TouchableOpacity>
         </View>    
-
-        <View style={styles.resContainer}>
-            
-            <View style={{flexDirection:'row', gap:10, alignItems:'center'}}>
-                {country && (
-                        <>
-                            <MaterialIcons name="location-pin" size={24} color="red" />
-                            <Text style={styles.label}>{nameCity}</Text>
-                            <Image 
-                                source={{uri: country || 'https://flagsapi.com/BR/flat/64.png'}}
-                                style={{width:35, height:35}}
-                            />
-                        </>
-                    )
-                }
-            </View>
         
-            <View>
-                {
-                    country &&(
-                        <>
-                            <Text 
-                                style={
-                                        {   
-                                            fontSize:18, 
-                                            marginTop:10, 
-                                            fontWeight:'semibold'
-                                        }
-                                }>
-                                {temp} ºC
-                            </Text>
-                        </>
-                    )
+        { country && (
+                <>
+                    <View style={styles.resContainer}>
+                        
+                        <View style={{flexDirection:'row', gap:10, alignItems:'center'}}>
+                            {country && (
+                                    <>
+                                        <MaterialIcons name="location-pin" size={24} color="red" />
+                                        <Text style={styles.label}>{nameCity}</Text>
+                                        <Image 
+                                            source={{uri: country || 'https://flagsapi.com/BR/flat/64.png'}}
+                                            style={{width:35, height:35}}
+                                        />
+                                    </>
+                                )
+                            }
+                        </View>
+                    
+                        <View>
+                            {
+                                country &&(
+                                    <>
+                                        <Text 
+                                            style={
+                                                    {   
+                                                        fontSize:18, 
+                                                        marginTop:10, 
+                                                        fontWeight:'semibold',
+                                                        color:'#fff'
+                                                    }
+                                            }>
+                                            {temp} ºC
+                                        </Text>
+                                    </>
+                                )
 
-                }
-            </View>
+                            }
+                        </View>
 
-            <View style={{flexDirection:'row', gap:10, alignItems:'center', marginTop:10, }}>
-            {
-                    country &&(
-                        <>
-                            <Text style={
-                                          {
-                                            fontSize:18, 
-                                            fontWeight:'semibold'
-                                          }
-                                        }>
-                                            {description.charAt(0).toUpperCase() + description.slice(1)}
-                            </Text>
-                            <Image 
-                            source={{uri: icon || 'https://openweathermap.org/img/wn/01n.png'}}
-                            style={{width:35, height:35}}
-                        />
-                        </>
-                    )
+                        <View style={{flexDirection:'row', gap:10, alignItems:'center', marginTop:10, }}>
+                        {
+                                country &&(
+                                    <>
+                                        <Text style={
+                                                    {
+                                                        fontSize:18, 
+                                                        fontWeight:'semibold',
+                                                        color:'#fff'
+                                                    }
+                                                    }>
+                                                        {description.charAt(0).toUpperCase() + description.slice(1)}
+                                        </Text>
+                                        <Image 
+                                        source={{uri: icon || 'https://openweathermap.org/img/wn/01n.png'}}
+                                        style={{width:35, height:35}}
+                                    />
+                                    </>
+                                )
 
-                }
-            </View>
-            
-            <View style={{flexDirection:'row', gap:5, alignItems:'center', marginTop:10,}} >
-                {
-                    country &&(
-                        <>
-                            <Feather name="droplet" size={22} color="black" />
-                            <Text style={{fontSize:18}}>{humidity}%  | </Text>
-                            <Feather name="wind" size={22} color="black" />
-                            <Text style={{fontSize:18}}> {wind} km/h</Text>
-                        </>
-                    )
-                }
-            </View>
+                            }
+                        </View>
+                        
+                        <View style={{flexDirection:'row', gap:5, alignItems:'center', marginTop:10,}} >
+                            {
+                                country &&(
+                                    <>
+                                        <Feather name="droplet" size={22} color="white" />
+                                        <Text style={{fontSize:18, color:'#fff'}}>{humidity}%  | </Text>
+                                        <Feather name="wind" size={22} color="white" />
+                                        <Text style={{fontSize:18, color:'#fff'}}> {wind} km/h</Text>
+                                    </>
+                                )
+                            }
+                        </View>
 
-        </View>       
-
-
+                    </View>
+                </>       
+         )}
+        
        </View>
 
 
