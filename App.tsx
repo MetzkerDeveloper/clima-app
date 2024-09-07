@@ -4,7 +4,11 @@ import Home from './src/app/home';
 
 export default function App() {
   return (
+    <>
+    <StatusBar style="light" />
     <Home />
+
+    </>    
   );
 }
 
