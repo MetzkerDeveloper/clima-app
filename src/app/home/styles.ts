@@ -71,11 +71,11 @@ export const styles = StyleSheet.create({
         justifyContent:'center',
         backgroundColor: '#629bf7',
         width:'90%',
-        height: 200,
-        marginTop:100,
+        height: 170,
+        marginTop:20,
         marginHorizontal:20,
         alignItems: 'center',
-        borderRadius:10,
+        borderRadius:8,
         shadowColor: "#000000",
         shadowOffset: {
             width: 0,
@@ -84,6 +84,27 @@ export const styles = StyleSheet.create({
         shadowOpacity:  0.18,
         shadowRadius: 4.59,
         elevation: 12
-    }
+    },
+    containerScroll:{
+        width:'100%',
+        marginTop:8,
+    },
+    roteiroContainer:{
+        justifyContent:'center',
+        backgroundColor: '#fff',
+        marginHorizontal:20,
+        padding:16,
+        width:'90%',
+        borderRadius:8,
+        marginTop:8,
+    },
+    title:{
+        fontSize: 18,
+        color: '#000',
+        fontWeight:'bold',
+        textAlign:'center',
+        marginBottom:14
+    },
+
   });
   
