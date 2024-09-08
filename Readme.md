@@ -1,13 +1,35 @@
-# WM - CLIMA APP
+# WM - Aplicativo de Previsão do Tempo com Sugestões de Viagem
 
-Aplicação desenvolvida para fins de estudo sobre React Native.
+Seu guia completo para o clima e suas próximas aventuras.
 
-Neste aplicativo, utilizamos a API da [OpenWeatherMap](https://api.openweathermap.org). Para utilizar a API, é necessário fazer um cadastro e gerar uma chave de acesso.
+## Descrição
+O WM é um aplicativo mobile desenvolvido com React Native que oferece previsões do tempo precisas e detalhadas para qualquer cidade do mundo. Com o WM, você pode:
 
-Abaixo, apresento um exemplo de como realizamos a chamada da API no meu app:
+* Pesquisar a previsão do tempo para qualquer cidade
+* Verificar temperatura, umidade, velocidade do vento e outras informações relevantes
+* Receber sugestões de atividades e pontos turísticos personalizados para sua viagem, gerados pela IA Gemini
 
-```
-`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`
-```
+## Tecnologias Utilizadas
+* **React Native:** Framework para desenvolvimento de aplicativos mobile multiplataforma
+* **Fetch:** Para realizar requisições HTTP
+* **Styled-components:** Biblioteca de estilização para React Native
+* **OpenWeatherMap API:** API para obter dados meteorológicos
 
-Foi utilizado crases invertidas (``) para criar uma template string, facilitando a inserção de variáveis na URL.
+## Instalação
+1. Clone este repositório: `git clone https://github.com/MetzkerDeveloper/clima-app.git`
+2. Instale as dependências: `cd wm-clima-app && npm install`
+3. Configure sua chave de API da OpenWeatherMap  e do Gemini no arquivo `.env`
+4. Execute o aplicativo: `npx expo start`
+
+## Contribuições
+Contribuições são bem-vindas! Para contribuir, por favor, siga as seguintes etapas:
+
+1. Fork este repositório
+2. Crie um novo branch
+3. Faça suas alterações
+4. Abra um Pull Request
+
+## Licença
+Este projeto está licenciado sob a licença MIT.
+
+![Imagem App](assets/appimage.jpeg)
